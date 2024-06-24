@@ -10,13 +10,16 @@ body {
   margin: 0;
   display: block;
 }
-// @include pseudo($width, $height){
-  
-//   background-image: red;
-//   background-size: cover;
-//   width: 33.5%;
-//   height: 100vh;
-//   top: 0;
-//   left: 0;
-//   z-index: -9;
-// }
+
+body::after{
+  content: "";
+    background-image: url(https://interactive-card-details-form.vercel.app/assets/bg-main-desktop.8bf4510a.png);
+    background-size: cover;
+    width: 33.5%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    transition: width .35s ease-in-out, height .35s ease-in-out;
+}

@@ -1,1 +1,65 @@
-
+.cardOverflow {
+    width: 46%;
+    overflow: hidden;
+    display: block;
+}
+.cardOverflow>div {
+    transition: transform .35s ease-in-out; 
+}
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    margin-left: 10%;
+    padding: 1rem;
+}
+@media screen and (min-width: 1350px) {
+    .cardForm {
+        margin-left: 3.5rem;
+        padding: 0;
+    }
+}
+.cardForm label {
+    margin-bottom: 16px;
+    gap: 14px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    color: var(--Verdarviolet);
+    font-size: 15px;
+}
+.info {
+    transition: height .3s ease-in-out;
+    font-size: 13px;
+    overflow: hidden;
+    height: 20px;
+    color: var(--Red);
+    transform: translateY(-10px);
+    margin: 0;
+}
+.info--hidden {
+    height: 0 !important;
+}
+.card-input {
+    padding: 13px;
+    border: 1px solid var(--Dargrayisviolet);
+    border-radius: 0.47rem;
+    
+}
+.cvc-mmyy {
+    display: flex;
+    margin-bottom: 26px;
+    position: relative;
+    gap: 10px;
+    
+}
+.labelmm, .labelcvc{
+    width: 50%;
+}
+.labelmm div {
+    display: flex;
+    gap: 10px;
+}
+.card-input-w{
+    width: 50%;
+}

@@ -1,0 +1,16 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    opacity: .5;
+}
+.footer p{
+    margin: 10px;
+}
+.name{
+    color: var(--blue);
+}
+.repository{
+    color: var(--blue);
+}

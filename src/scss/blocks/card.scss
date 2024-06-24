@@ -1,3 +1,70 @@
+.cardDeco {
+    width: 54%;
+    padding: 2rem;
+    display: block;
+}
+//  CARDFRONT
 .cardFront{
- background-color: aqua;
+    background-image: url(https://interactive-card-details-form.vercel.app/assets/bg-card-front.5aca8db4.png);
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto 32px;
+}
+
+
+.cardFront>span {
+    font-size: clamp(22px,2.5vw,27px);
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.cardFront div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    word-spacing: 6px;
+}
+.cardFront div span {
+    font-size: 1rem;
+}
+.cardFront div span:first-child {
+    text-transform: uppercase;
+}
+
+.cardFront, .cardBack{
+    transform: scale(0.85);
+    max-width: 28rem;
+    height: 15.5rem;
+    border-radius: 10px;
+    background-size: cover;
+    color: var(--White);
+    position: relative;
+    padding: 32px;
+}
+
+.cardFront:after{
+    content: url(https://interactive-card-details-form.vercel.app/assets/card-logo.c6566e76.svg);
+    position: absolute;
+    top: 27px;
+    left: 27px;
+}
+
+
+// CARDBACK 
+.cardBack{
+    background-image: url(https://interactive-card-details-form.vercel.app/assets/bg-card-back.503939c0.png);
+    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 2rem 0 auto;
+}
+.cardBack span {
+    position: absolute;
+    right: 60px;
+    top: 109px;
+    font-size: 24px;
 }
