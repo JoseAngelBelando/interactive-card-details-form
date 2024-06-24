@@ -1,7 +1,22 @@
+*, ::after ::before{
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #111;
-  font-family: sans-serif;
+  background-color: white;
+  font-family: space grotesk;
+  margin: 0;
+  display: block;
 }
+// @include pseudo($width, $height){
+  
+//   background-image: red;
+//   background-size: cover;
+//   width: 33.5%;
+//   height: 100vh;
+//   top: 0;
+//   left: 0;
+//   z-index: -9;
+// }

@@ -2,13 +2,74 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-target.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <link rel="stylesheet" href="./scss/styles.scss">
+    
+    <title>Interactive-card</title>
   </head>
   <body>
+    <section id="root">
+      <div class="cardDeco">
+        <div class="cardFront">
+          <span>0000 0000 0000 0000</span>
+          <div>
+            <span>Austin Powers</span>
+            <span>00/00</span>
+         </div> 
+        </div>
+      </div>
+
+      <div class="cardBack">
+        <span>000</span>
+      </div>
+    </section>
+    <main class="cardOverflow">
+      <div>
+        <form class="cardForm">
+          <label class="labelName">
+            "Cardholder Name"
+            <input type="text" placeholder="e.g Austin Powers" name="name" class="card-input">
+          </label>
+          <p class="info info--hidden" aria-live="polite"></p>
+          <label class="labelnumber">
+            "Card Number"
+            <input type="text" placeholder="e.g 1234 5678 9123 0000" name="number" class="card-input" minlength="19">
+          </label>
+          <p class="info info--hidden" aria-live="polite"></p>
+          <div class="cvc-mmyy">
+            <label class="label-labely">
+              "Exp. Date (MM/YY)"
+              <div>
+                <input type="text" placeholder="MM" name="mm" class="card-input">
+                <input type="text" placeholder="YY" name="yy" class="card-input">
+              </div>
+            </label>
+            <p class="info info--hidden" aria-live="polite"></p>
+            <label class="labelcvc">
+              "CVC"
+              <input type="text" placeholder="e.g. 123" name="cvc" class="card-input">
+            </label>
+            <p class="info info--hidden" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn-submit btn-primary">Confirm</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>
+        "Made with * by"
+        <a href="">José Angel</a>
+        " - "
+        <a href="">Repository</a>
+      </p>
+    </footer>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
