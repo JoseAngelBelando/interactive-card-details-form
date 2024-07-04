@@ -18,14 +18,14 @@
     <section class="root">
       <div class="cardDeco">
         <div class="cardFront">
-          <span>0000 0000 0000 0000</span>
+          <span class="card-number">0000 0000 0000 0000</span>
           <div>
-            <span>Austin Powers</span>
-            <span>00/00</span>
+            <span class="card-name">Austin Powers</span>
+            <span class="card-expiry">00/00</span>
          </div> 
         </div>
         <div class="cardBack">
-          <span>000</span>
+          <span class="card-cvc">000</span>
         </div>
       </div>
 
@@ -42,12 +42,9 @@
               <input type="text" placeholder="e.g 1234 5678 9123 0000" name="number" class="card-input" minlength="19">
             </label>
             <p class="info info--hidden" aria-live="polite"></p>
-
-
-            
             <div class="cvc-mmyy">
               <label class="labelmm labelyy">
-                <span>"Exp. Date (MM/YY)"</span> 
+                "Exp. Date (MM/YY)" 
                 <div>
                   <input type="text" placeholder="MM" name="mm" class="card-input card-input-w">
                   <input type="text" placeholder="YY" name="yy" class="card-input card-input-w">
@@ -74,5 +71,5 @@
       </footer>
       <script type="module" src="./js/index.js"></script>
     </section>
-    </body>
+  </body>
 </html>

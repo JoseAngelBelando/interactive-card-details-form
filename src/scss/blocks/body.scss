@@ -23,3 +23,6 @@ body::after{
     z-index: -100;
     transition: width .35s ease-in-out, height .35s ease-in-out;
 }
+.info--hidden {
+  display: none;
+}
